@@ -1,0 +1,19 @@
+{
+  "name": "blr_salons",
+  "version": "1.0.0",
+  "description": "This projects mainly storing all the salons locations in that particular state and fetching the nearest salons to the user based on their location. So, user can pick a salons nearest to them.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalviumcommunity/S67_blr_Salons.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kalviumcommunity/S67_blr_Salons/issues"
+  },
+  "homepage": "https://github.com/kalviumcommunity/S67_blr_Salons#readme"
+}
