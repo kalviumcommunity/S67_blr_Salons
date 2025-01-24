@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/kalviumcommunity/S67_blr_Salons/issues"
   },
-  "homepage": "https://github.com/kalviumcommunity/S67_blr_Salons#readme"
+  "homepage": "https://github.com/kalviumcommunity/S67_blr_Salons#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
 }
