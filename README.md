@@ -16,4 +16,15 @@ User can post reviews and use the review posted by other user to make a better c
 ## Why this project
 As human to look more approachable and well mannered, Haircut plays a major role .So to get a good haircut you have to choose a good salon and have to relavently close in distance to you. While working on this project we will be able to aquire more knowledge on Database and javascript frameworks.
 
+## Task 1:-
+created a server.js file and added basic express app code.
+
+## Task 2:-
+Deployed my ASAP app on render.
+
+## Task 3:-
+Created a docs.bruno using Bruno.
+
+## Task 4:-
+Added entites with appropriate properties and added in Mongo Atlas.
 
