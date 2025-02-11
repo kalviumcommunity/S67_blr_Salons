@@ -26,5 +26,5 @@ Deployed my ASAP app on render.
 Created a docs.bruno using Bruno.
 
 ## Task 4:-
-Added entites with appropriate properties and added in Mongo Atlas.
+Added entites with appropriate properties and added it in Mongo Atlas.
 
