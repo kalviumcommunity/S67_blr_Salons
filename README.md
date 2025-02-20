@@ -28,3 +28,10 @@ Created a docs.bruno using Bruno.
 ## Task 4:-
 Added entites with appropriate properties and added it in Mongo Atlas.
 
+## Task 5:-
+Created a react application and arraged the files pproperly
+
+## Task 6:-
+Deployed front-end application
+link:
+https://blrsalons.manojb6153.workers.dev/
