@@ -22,10 +22,17 @@ created a server.js file and added basic express app code.
 
 ## Task 2:-
 Deployed my ASAP app on render.
-Reander Link: https://s67-blr-salons.onrender.com
 
 ## Task 3:-
-Created a docs.bruno using Bruno
+Created a docs.bruno using Bruno.
 
 ## Task 4:-
+Added entites with appropriate properties and added it in Mongo Atlas.
 
+## Task 5:-
+Created a react application and arraged the files pproperly
+
+## Task 6:-
+Deployed front-end application
+link:
+https://blrsalons.manojb6153.workers.dev/

@@ -1,0 +1,21 @@
+meta {
+  name: POST
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3000/products
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "name": "Laptop",
+      "description": "Gaming Laptop",
+      "price": 1200,
+      "stock": 10,
+      "categoryId": "67a1e1731f7259a39ec0d8a4"
+  }
+}
