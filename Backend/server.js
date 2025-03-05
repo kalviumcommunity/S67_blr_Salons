@@ -26,4 +26,11 @@ app.get("/", (req, res) => {
   res.json({ message: "Welcome to the API", database: dbStatus });
 });
 
+app.get("/salons",async (req,res)=>{
+  const salons = await Salon.find();
+  res.json(salons);
+});
+
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+
