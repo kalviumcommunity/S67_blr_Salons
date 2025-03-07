@@ -22,3 +22,4 @@ function SalonList() {
     </div>
   );
 }
+export default SalonList;
