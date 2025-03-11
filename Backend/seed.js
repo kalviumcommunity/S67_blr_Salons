@@ -1,23 +1,45 @@
 const connectDB = require("./db");
-const { User, Product, Category } = require("./schema");
+const { Salon } = require("./schema");
 
 const seedDatabase = async () => {
-    await connectDB();
+    try {
+        console.log("🌍 Connecting to MongoDB...");
+        await connectDB();
+        console.log("✅ MongoDB Connected!");
 
-    await Category.create({ name: "Electronics", description: "Gadgets & Devices" });
+        console.log("🗑 Clearing existing data...");
+        await Salon.deleteMany({});
+        console.log("✅ Data Cleared!");
 
-    await Product.create({
-        name: "Laptop",
-        description: "Gaming Laptop",
-        price: 1200,
-        stock: 10,
-        categoryId: (await Category.findOne({ name: "Electronics" }))._id
-    });
+        const salons = [
+            {
+                name: "Pall Salon",
+                description: "Best Salon in Bangalore for haircuts and styling.",
+                location: "Tiripur, Tamil Nadu",
+            },
+            {
+                name: "PK Salon",
+                description: "Best Salon in Bangalore for haircuts and styling.",
+                location: "Karur, Tamil Nadu",
+            },
+            {
+                name: "Daddy Salon",
+                description: "Best Salon in Bangalore for haircuts and styling.",
+                location: "Banglore, Karnataka",
+            }
 
-    await User.create({ name: "John Doe", email: "john@example.com", password: "hashedpassword" });
+        ];
 
-    console.log("Database Seeded!");
-    process.exit();
+        console.log("📤 Inserting new data...");
+        const insertedData = await Salon.insertMany(salons);
+        console.log("✅ Inserted Data:", insertedData);
+
+        console.log("🎉 Database Seeded Successfully!");
+        process.exit();
+    } catch (error) {
+        console.error("❌ Error seeding database:", error);
+        process.exit(1);
+    }
 };
 
 seedDatabase();

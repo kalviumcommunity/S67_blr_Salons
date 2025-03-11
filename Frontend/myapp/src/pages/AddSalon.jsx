@@ -36,7 +36,7 @@ export default function EntityForm() {
 
     return (
         <div className="p-4">
-            <h1 className="text-xl font-bold">Add Your Salon</h1>
+            <h1 className="text-xl font-bold">Add New Salon</h1>
             <form onSubmit={handleSubmit} className="space-y-4">
                 <input type="text" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} className="border p-2 w-full" required />
                 <input type="text" placeholder="Description" value={description} onChange={(e) => setDescription(e.target.value)} className="border p-2 w-full" required />

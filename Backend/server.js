@@ -38,9 +38,9 @@ app.post("/api/addSalon", async (req, res) => {
           return res.status(400).json({ error: "All fields are required" });
       }
 
-      const newAttraction = new Attraction({ name, description, location });
+      const newSalon = new Salons({ name, description, location });
       await newAttraction.save();
-      res.status(201).json(newAttraction); 
+      res.status(201).json(newSalon); 
   } catch (err) {
       res.status(500).json({ error: err.message });
   }

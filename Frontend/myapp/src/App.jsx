@@ -10,10 +10,12 @@ export const App = () => {
     <>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<AboutUs/>}/>
-        <Route path="/about" element={<Cards/>}/>
+        <Route path="/about" element={<AboutUs/>}/>
+        <Route path="/" element={<Cards/>}/>
         <Route path="/salons" element={<SalonList/>}/>
         <Route path="/add" element={<EntityFormPage/>}/>
+        <Route path="/" element={<EntityList />} />
+        <Route path="/update/:id" element={<UpdateEntity />} />
       </Routes>
     </BrowserRouter>
     </>
